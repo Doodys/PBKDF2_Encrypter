@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Diagnostics;
 using System.Linq;
 using System.Security.Cryptography;
 using System.Text;
@@ -64,8 +65,13 @@ namespace PBKDF2
 
         private static string PBKDF2_Encrypt(object sender, string pass, int iters)
         {
+            var sw = new Stopwatch();
+
+            sw.Start();
             var hashedPassword = PBKDF2_Encrypt(Encoding.UTF8.GetBytes(pass), GenerateSalt(), iters);
-            return Convert.ToBase64String(hashedPassword);
+            sw.Stop();
+
+            return $"Hashed password:\n {Convert.ToBase64String(hashedPassword)}\nElapsed time:\n {sw.ElapsedMilliseconds} ms";
         }
 
         private static byte[] PBKDF2_Encrypt(byte[] toBeHashed, byte[] salt, int iters)

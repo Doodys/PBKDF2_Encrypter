@@ -5,11 +5,11 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:PBKDF2"
         mc:Ignorable="d"
-        Title="PBKDF2 Encrypter" Height="200" Width="540">
+        Title="PBKDF2 Encrypter" Height="230" Width="540">
     <Grid>
         <TextBox x:Name="TextBox_Pass" HorizontalAlignment="Left" Margin="24,36,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="313"/>
         <TextBox x:Name="TextBox_Iter" HorizontalAlignment="Left" Margin="380,36,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
-        <TextBox x:Name="TextBox_Result" HorizontalAlignment="Left" Height="43" Margin="24,99,0,0" Text="" TextWrapping="Wrap" VerticalAlignment="Top" Width="476" IsEnabled="False" Focusable="False"/>
+        <TextBox x:Name="TextBox_Result" HorizontalAlignment="Left" Height="70" Margin="24,99,0,0" Text="" TextWrapping="Wrap" VerticalAlignment="Top" Width="476" IsEnabled="False" Focusable="False"/>
         <Button Content="Encrypt" HorizontalAlignment="Center" Margin="0,67,0,0" VerticalAlignment="Top" Width="117" Click="Button_Click"/>
         <Label Content="Password" HorizontalAlignment="Left" Margin="18,11,0,0" VerticalAlignment="Top"/>
         <Label Content="Number of iterations" HorizontalAlignment="Left" Margin="380,11,0,0" VerticalAlignment="Top"/>
