@@ -24,7 +24,6 @@ namespace PBKDF2
     {
         public MainWindow()
         {
-            //https://immortalcoder.blogspot.com/2015/11/best-way-to-secure-password-using-cryptographic-algorithms-in-csharp-dotnet.html
             InitializeComponent();
         }
 
